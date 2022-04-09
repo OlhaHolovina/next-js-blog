@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../../components/Layout";
+import Image from "next/image";
 
 export default function BurlingtonGallery() {
   return (
@@ -9,9 +10,14 @@ export default function BurlingtonGallery() {
           <title>Art Gallery of Burlington</title>
         </Head>
 
-
-        {/*<img src="../img/art.jpg" className="img-fluid img-cover" alt="Pond with sculpture in Royal Botanical Gardens">*/}
-
+        <Image
+          priority
+          src="/images/art.jpg"
+          height={300}
+          width={1500}
+          className="img-fluid"
+          alt='Pond with sculpture in Royal Botanical Gardens'
+        />
 
         <div className="container">
           <h3>Art Gallery of Burlington</h3>

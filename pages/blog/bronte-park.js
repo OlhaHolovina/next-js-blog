@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../../components/Layout";
+import Image from "next/image";
 
 export default function BrontePark() {
   return (
@@ -8,8 +9,14 @@ export default function BrontePark() {
         <Head>
           <title>Bronte Creek Provincial Park</title>
         </Head>
-        {/*<img src="../img/park.jpg" className="img-fluid img-cover" alt="Pond with sculpture in Royal Botanical Gardens">*/}
-
+        <Image
+          priority
+          src="/images/park.jpg"
+          height={300}
+          width={1500}
+          className="img-fluid"
+          alt='Pond with sculpture in Royal Botanical Gardens'
+        />
         <section className='text-center container'>
           <h3>Bronte Creek Provincial Park</h3>
           <div className="row">
