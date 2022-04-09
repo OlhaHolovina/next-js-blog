@@ -22,6 +22,16 @@ main {
     gap: 10px;
 }
 
+.list-group-item {
+    color: darkblue;
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    text-decoration: underline;
+}
+
+
 footer {
     height: 38px;
     line-height: 38px;

@@ -11,21 +11,14 @@ export default function Home() {
 
       <section >
         <h2>Posts List</h2>
-        <div role="navigation">
-          <ul>
-            <li>
-              <Link href="/blog/first-post">
-                <a>First Post</a>
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/blog/second-post">
-                <a>Second Post</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <ul className="list-group">
+          <Link href="/blog/bronte-park">
+            <li className="list-group-item">Bronte Park</li>
+          </Link>
+          <Link href="/blog/burlington-gallery">
+            <li className="list-group-item">Burlington Gallery</li>
+          </Link>
+        </ul>
       </section>
     </Layout>
   );
